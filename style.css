@@ -1,0 +1,154 @@
+@font-face{
+    font-family: 'Android';
+    src: url(/fontes/idroid.otf) format('opentype');
+    font-weight: normal;
+}
+
+
+
+
+:root{
+    --cor0: #1A5038;
+    --cor1:#84E1AD;
+    --cor2:#36C074;
+    --fonte-android:'Android','cursive'
+}
+*{
+    margin: 0%;
+    padding: 0%;
+   
+}
+body{
+    background-color:var(--cor1) ;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+    font-family: var(--fonte-android);
+}
+header{
+    background-image:linear-gradient(to bottom,var(--cor2) 40% , var(--cor0) );
+    color: white;
+    text-align: center;
+}
+header h1{
+    text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.562);
+}
+section{
+    background-color:#ffffff ;
+    max-width: 800px;
+    min-width: 300px;
+    width: 70%;
+    margin: auto;
+    margin-top: 0%;
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.349);
+    
+}
+section img.pequena{
+    max-width: 350px;
+    display: block;
+    margin: auto;
+}
+footer{
+    background: var(--cor0);
+    text-align: center;
+    height: 30px;
+}
+header >p{
+    margin-top: 1em;
+}
+nav{
+    margin-top:1em;
+    box-shadow: 0px 4px 4px 0px rgb(0 0 0 / 43%);
+}
+ol{
+    list-style-type: none;
+    overflow: hidden;
+}
+p{
+    margin:10px 0px ;
+    text-indent: 20px;
+    font-size: 1,1em;
+    line-height: 1.5em;
+}
+nav li{
+    float: left;
+
+}
+li >a{
+    color: white;
+    padding: 10px;
+    display: block;
+    text-decoration: none;
+
+    /* transition-duration: .1s;*/
+} 
+li >a:hover{
+    background: white;
+    color:var(--cor0) ;
+    border-radius: 3px;
+}
+
+article{
+    
+    margin: 15px;
+    padding: 15px;
+}
+article#primeiro{
+   margin-top: 0px;
+}
+ article img{ 
+    width: 100%;
+}
+/* #video{
+    margin: 0px;
+    background: var(--cor0);
+    text-align: center;
+} */
+#video{
+    background: var(--cor0);
+    margin: 0%;
+    padding-bottom: 52%;
+    position: relative;
+}
+#vv{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+
+#h3{
+   background: var(--cor0);
+   margin-bottom: 0%;
+   padding: 10px;
+   border-radius: 9px 9px 0px 0px;
+   color: white;
+}
+#apreder{
+    background: #C5EBD6;
+    padding: 15px;
+    margin-top: 0%;
+    border-radius: 0px 0px 9px 9px;
+}
+#apreder h3{
+    background: var(--cor0);
+}
+.link{
+    text-decoration: none;
+    background: var(--cor1);
+    color: var(--cor0);
+    padding: 4px 4px;
+    border-radius: 3px;
+    font-weight: bolder;
+}
+.android{
+   list-style-type:" \2714\00A0\00A0" ;  /*colocar emoji na li*/
+   list-style-position: inside; /* colocar os pontos para dentroda lista*/
+   columns: 2;/* quantas colunas tem a ol/ul */
+}
+.link:hover{
+    text-decoration:underline;
+    color: var(--cor2);
+}
